@@ -86,6 +86,10 @@
                 <!-- Stats -->
                 <div class="filter-stats">
                     <span id="problemCount">Loading...</span>
+                    <span class="stats-divider">|</span>
+                    <span id="progressStats" class="progress-stats">
+                        <span class="done-count">0</span> done
+                    </span>
                 </div>
             </div>
         </section>
@@ -108,11 +112,13 @@
                 <table class="problems-table">
                     <thead>
                         <tr>
+                            <th class="th-done">Done</th>
                             <th>Problem</th>
                             <th>Contest</th>
                             <th>Division</th>
                             <th>Index</th>
                             <th>Date</th>
+                            <th class="th-notes">Notes</th>
                             <th>Link</th>
                         </tr>
                     </thead>
