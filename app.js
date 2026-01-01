@@ -6,7 +6,7 @@
 
 // =========================================
 // Configuration & State
-// =========================================
+ 
 const API_ENDPOINTS = {
     contests: 'https://codeforces.com/api/contest.list',
     problems: 'https://codeforces.com/api/problemset.problems'
@@ -27,7 +27,7 @@ const state = {
 
 // =========================================
 // DOM Elements
-// =========================================
+ 
 const elements = {
     listViewBtn: document.getElementById('listViewBtn'),
     cardViewBtn: document.getElementById('cardViewBtn'),
@@ -46,8 +46,7 @@ const elements = {
 };
 
 // =========================================
-// LocalStorage Functions
-// =========================================
+// LocalStorage Functions 
 
 /**
  * Load progress from LocalStorage
@@ -107,7 +106,7 @@ function updateProgress(contestId, index, updates) {
 
 // =========================================
 // Utility Functions
-// =========================================
+ 
 
 /**
  * Parse division from contest name
@@ -206,7 +205,7 @@ function escapeHtml(text) {
 
 // =========================================
 // API Functions
-// =========================================
+ 
 
 /**
  * Fetch data from Codeforces API
@@ -272,8 +271,7 @@ async function fetchData() {
 }
 
 // =========================================
-// Filter Functions
-// =========================================
+// Filter Functions 
 
 /**
  * Apply all filters and update display
@@ -327,7 +325,7 @@ function updateProgressStats() {
 
 // =========================================
 // Render Functions
-// =========================================
+ 
 
 /**
  * Render problems based on current view
@@ -434,7 +432,7 @@ function renderCardView() {
 
 // =========================================
 // Progress Event Handlers
-// =========================================
+ 
 
 /**
  * Handle done checkbox change
@@ -468,7 +466,7 @@ window.handleNotesChange = handleNotesChange;
 
 // =========================================
 // UI State Functions
-// =========================================
+ 
 
 function showLoading() {
     elements.loadingState.classList.remove('hidden');
@@ -489,7 +487,7 @@ function showError() {
 
 // =========================================
 // Event Handlers
-// =========================================
+ 
 
 /**
  * Handle division filter clicks
@@ -570,7 +568,7 @@ function handleViewToggle(view) {
 
 // =========================================
 // Initialization
-// =========================================
+ 
 
 function init() {
     // Load saved progress
